@@ -11,7 +11,6 @@ import java.util.List;
 @Setter
 public class Enemy extends Character {
 
-
     private String name;
 
     private List<Enemy> enemiesList;

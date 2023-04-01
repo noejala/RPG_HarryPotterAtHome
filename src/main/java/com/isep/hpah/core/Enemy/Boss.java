@@ -12,8 +12,6 @@ import java.util.List;
 @Setter
 public class Boss extends Character {
 
-    LogicTxt lt = new LogicTxt();
-
     String name;
 
     public Boss(String name, int maxHealth, int damage) {

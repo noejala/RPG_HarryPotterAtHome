@@ -66,13 +66,11 @@ public class Game {
         lt.anythingToContinue();
         lt.clearConsole();
         year1.introYear1();
-        Spell Rookie_Spell = new Spell("Rookie Spell", 1000);
         Spell Wingardium_Leviosa = new Spell("Wingardium Leviosa", 30);
         List<Spell> spells = new ArrayList<>();
-        spells.add(Rookie_Spell);
         spells.add(Wingardium_Leviosa);
         wz.setKnownSpells(spells);
-        fight.attackBossWz(new Boss("Troll", 100, 10), wz, spells);
+        fight.attackBossWz(new Boss("Troll", 150, 10), wz, spells);
         fight.rewards(wz);
         lt.clearConsole();
         year2.introYear2();
@@ -91,10 +89,8 @@ public class Game {
         }
         fight.attackBossWz(new Boss("Basilisk", 750, 15), wz, spells);
         wz.getKnownSpells().removeAll(wz.getKnownSpells());
-        Spell RookieSpell = new Spell("Rookie Spell", 1000);
         Spell WingardiumLeviosa = new Spell("Wingardium Leviosa", 30);
         Spell Accio = new Spell("Accio", 40);
-        wz.getKnownSpells().add(RookieSpell);
         wz.getKnownSpells().add(WingardiumLeviosa);
         wz.getKnownSpells().add(Accio);
         wz.setKnownSpells(spells);
