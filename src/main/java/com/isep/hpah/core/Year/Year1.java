@@ -29,7 +29,7 @@ public void introYear1() {
         System.out.println( "My name is Professor Filius Flitwick, and I will be your charms teacher this year.");
         System.out.println("Today, you will have your first class charms class.");
         System.out.println("");
-        System.out.println("You have learned two new spells: Rookie Spell and Wingardium Leviosa !");
+        System.out.println("You have learned your first spell: Wingardium Leviosa !");
         lt.anythingToContinue();
     }
 
