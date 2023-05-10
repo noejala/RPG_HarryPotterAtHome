@@ -84,7 +84,7 @@ public class LogicTxt {
         }
     }
 
-    // separator
+    //  separator
     public static void separator(int n) {
         for (int i = 0; i < n; i++) {
             System.out.print("=");

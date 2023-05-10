@@ -112,7 +112,7 @@ public class Game {
         fight.rewards(wz);
         lt.clearConsole();
         year5.introYear5();
-        fight.attackBossWz(new Boss("Dolores Ombrage", 100, 10), wz, spells);
+        fight.attackBossWz(new Boss("Dolores Ombrage", 1000, 10), wz, spells);
         fight.rewards(wz);
         lt.clearConsole();
         year6.introYear6();
@@ -123,7 +123,7 @@ public class Game {
             lt.header("You need to take a Decison");
             int ask = lt.askInt("Do you want to join the Death Eaters?" +
                     "\n" + "1. Yes" +
-                            "\n" + "1. No", 2);
+                            "\n" + "2. No", 2);
             if (ask == 1) {
                 lt.header("You have joined the Death Eaters");
                 lt.header("You are now unstoppable");
@@ -131,17 +131,9 @@ public class Game {
                 lt.anythingToContinue();
                 System.exit(0);
             } else {
-                fight.attackBossWz(new Boss("Death Eaters", 600, 15), wz, spells);
-                fight.rewards(wz);
-                Spell SectumSempra = new Spell("Sectumsempra", 50);
-                wz.getKnownSpells().add(Sectumsempra);
-                wz.setKnownSpells(spells);
-                year7.introYear7();
-                Spell Expelliarmus = new Spell("Expelliarmus", 75);
-                wz.getKnownSpells().add(Expelliarmus);
-                wz.setKnownSpells(spells);
-                fight.attackBossWz(new Boss("Voldemort", 700, 25), wz, spells);
-                lt.header("You have saved the world from Voldemort!");
+                lt.header("You have chosen the right path");
+                lt.header("You are now ready to fight Voldemort");
+                lt.anythingToContinue();
             }
         }
         fight.attackBossWz(new Boss("Death Eaters", 2000, 15),wz,spells);
