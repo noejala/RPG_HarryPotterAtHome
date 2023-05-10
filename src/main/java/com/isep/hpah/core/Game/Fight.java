@@ -92,10 +92,9 @@ public class Fight {
             lt.anythingToContinue();
         }
         while (true) {
-            out.println("[ " + wz.getName() + " with " + wz.getDamage() + " damages and " + wz.getCurrentHealth() + " health points left !]");
-            out.println("");
             out.println("[ " + boss.getName() + " with " + boss.getDamage() + " damages and " + boss.getCurrentHealth() + " health points left !]");
             Spells = wz.getKnownSpells();
+            out.println("");
             out.println("Choose your spell :");
             for (int j = 0; j < Spells.size(); j++) {
                 out.print("\n" + (j + 1) + ". " + Spells.get(j).getName() + ", it has " + (int)(wz.getDamage() * Spells.get(j).getDamage()) + " damage");

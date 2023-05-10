@@ -147,12 +147,12 @@ public class Game {
         fight.attackBossWz(new Boss("Death Eaters", 2000, 15),wz,spells);
         fight.rewards(wz);
         wz.getKnownSpells().remove(Sectumsempra);
-        Spell SectumSempra = new Spell("Sectumsempra", 50);
-        wz.getKnownSpells().add(Sectumsempra);
+        Spell SectumSempra = new Spell("SectumSempra", 75);
+        wz.getKnownSpells().add(SectumSempra);
         wz.setKnownSpells(spells);
         lt.clearConsole();
         year7.introYear7();
-        Spell Expelliarmus = new Spell("Expelliarmus", 75);
+        Spell Expelliarmus = new Spell("Expelliarmus", 100);
         wz.getKnownSpells().add(Expelliarmus);
         wz.setKnownSpells(spells);
         fight.attackBossWz(new Boss("Voldemort", 700, 25),wz,spells);
